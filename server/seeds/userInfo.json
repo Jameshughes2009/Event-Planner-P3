@@ -1,0 +1,27 @@
+[
+    {
+        "username": "jamesh",
+        "email": "testing2.0@work.com",
+        "password": "testing12"
+    },
+    {
+        "username": "the_og_KH",
+        "email": "kenchad@example.com",
+        "password": "smith5678"
+    },
+    {
+        "username": "kacobhy",
+        "email": "ontherad@example.com",
+        "password": "smirere244"
+    },
+    {
+        "username": "hement",
+        "email": "kement@example.com",
+        "password": "smith5678"
+    },
+    {
+        "username": "the_og_AK",
+        "email": "kenchad@example.com",
+        "password": "smith9876"
+    }
+]
