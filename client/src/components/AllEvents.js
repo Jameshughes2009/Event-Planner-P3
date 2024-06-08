@@ -23,3 +23,14 @@ const AllEvents = () => {
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         {events.map((event) => (
           <div key={event.id} className="col">
+            <Link
+                to={`/eventDetails/${event.id}`} // Linking to event details page
+                style={{ textDecoration: "none", color: "black" }} // Styling the link
+              >
+                <div className="card h-100">
+                  {parseInt(event.date) > new Date().getTime() ? ( // Checking if the event date is in the future
+                    <img
+                      // src={notebookImage} // Display the event image
+                      // className="card-img-top"
+                      // alt={event.title}
+                    />
