@@ -3,6 +3,9 @@
     --PrimaryColor: #0056b3; /* Dark blue as primary color */
     --SecondaryColor: #f8f9fa; /* Light gray as secondary color */
 }
+.home-content{
+    color: white;
+}
 
 /* Home page styling */
 .home-container {
@@ -14,6 +17,8 @@
     max-width: 100%;
     height: auto;
     background-position: center;
+    background-image: url("../assets/event-management-creation-and-development-personal-and-corporate-events-photo.jpg");
+
 }
 
 .title {
@@ -67,4 +72,8 @@
 }
 .name {
     font-size: larger;
+}
+
+.donation-container {
+    color: white;
 }

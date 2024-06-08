@@ -1,102 +1,101 @@
 /* Body Styles */
 body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    background-color: #f5f5f5; /* Light gray background */
-  }
-  
-  /* Navbar Styles */
-  .navbar-brand,
-  .nav-link {
-    color: #004d40 !important; /* Dark green text */
-    font-weight: bold;
-  }
-  
-  .navbar-brand:hover,
-  .nav-link:hover {
-    color: #00796b !important; /* Dark teal on hover */
-  }
-  
-  .navbar-toggler-icon {
-    background-color: #004d40; /* Dark green navbar toggler icon */
-  }
-  
-  @media (max-width: 992px) {
-    .navbar-collapse {
-      background-color: #004d40; /* Dark green collapse background */
-    }
-  }
-  
-  /* Footer Styles */
-  .footer {
-    background-color: #1a237e; /* Dark blue footer */
-    color: #ffffff; /* White text */
-  }
-  
-  /* Heading Styles */
-  h1, h2, h3 {
-    color: #004d40; /* Dark green headings */
-  }
-  
-  /* General Container */
-  .container {
-    max-width: 1200px; /* Reduced container width */
-    margin: 0 auto;
-    padding: 15px;
-  }
-  
-  /* Card Styles */
-  .card {
-    border-radius: 10px; /* Rounded corners */
-    border: 1px solid #e0e0e0; /* Light gray border */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
-  }
-  
-  .card:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
-  }
-  
-  .card-img-top {
-    height: 200px;
-    object-fit: cover;
-    border-top-left-radius: 10px; /* Rounded corners for top of image */
-    border-top-right-radius: 10px;
-  }
-  
-  .card-body {
-    padding: 25px;
-  }
-  
-  .card-title {
-    font-size: 24px; /* Larger title */
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #004d40; /* Dark green title */
-  }
-  
-  .card-text {
-    margin-bottom: 20px;
-    color: #333; /* Dark text */
-  }
-  
-  .text-muted {
-    font-size: 14px;
-    font-style: italic;
-    color: #666; /* Gray italic text */
-  }
-  
-  @media (min-width: 768px) {
-    .card-columns {
-      column-count: 2;
-    }
-  }
-  
-  @media (min-width: 992px) {
-    .card-columns {
-      column-count: 3;
-    }
-  }
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: #f9f9f9; /* Lighter gray background */
+}
 
+/* Navbar Styles */
+.navbar-brand,
+.nav-link {
+  color: #00796b !important; /* Bright teal text */
+  font-weight: bold;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+  color: #009688 !important; /* Teal on hover */
+}
+
+.navbar-toggler-icon {
+  background-color: #00796b; /* Teal navbar toggler icon */
+}
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+      background-color: #00796b; /* Teal collapse background */
+  }
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #3f51b5; /* Bright blue footer */
+  color: #ffffff; /* White text */
+}
+
+/* Heading Styles */
+h1, h2, h3 {
+  color: #00796b; /* Bright teal headings */
+}
+
+/* General Container */
+.container {
+  max-width: 1200px; /* Reduced container width */
+  margin: 0 auto;
+  padding: 15px;
+}
+
+/* Card Styles */
+.card {
+  border-radius: 10px; /* Rounded corners */
+  border: 1px solid #e0e0e0; /* Light gray border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.card:hover {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px; /* Rounded corners for top of image */
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  padding: 25px;
+}
+
+.card-title {
+  font-size: 24px; /* Larger title */
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #00796b; /* Bright teal title */
+}
+
+.card-text {
+  margin-bottom: 20px;
+  color: #444; /* Darker text */
+}
+
+.text-muted {
+  font-size: 14px;
+  font-style: italic;
+  color: #777; /* Lighter gray italic text */
+}
+
+@media (min-width: 768px) {
+  .card-columns {
+      column-count: 2;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-columns {
+      column-count: 3;
+  }
+}
   
