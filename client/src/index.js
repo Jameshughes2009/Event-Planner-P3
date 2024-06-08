@@ -11,6 +11,6 @@ const root = ReactDOM.createRoot(rootElement); // Create a root for React render
 
 root.render(
   <React.StrictMode>
-    <App /> // Render the App component within React.StrictMode for highlighting potential issues
+    <App />
   </React.StrictMode>
-);
+); // Render the App component within React.StrictMode for highlighting potential issues
