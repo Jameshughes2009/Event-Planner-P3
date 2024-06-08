@@ -34,3 +34,58 @@ const AllEvents = () => {
                       // className="card-img-top"
                       // alt={event.title}
                     />
+                ) : (
+                    <div style={{ position: "relative" }}>
+                      <img
+                        // src={notebookImage} // Display the event image with a dark filter if the event is in the past
+                        // className="card-img-top"
+                        // alt={event.title}
+                        // style={{ filter: "brightness(25%)" }}
+                      />
+                      <p
+                        style={{
+                          position: "absolute",
+                          top: "50%",
+                          left: "50%",
+                          transform: "translate(-50%, -50%)",
+                          zIndex: 1,
+                          color: "white",
+                        }}
+                        >
+                        Event is over
+                      </p>
+                    </div>
+                  )}
+                  <div className="card-body">
+                    <h5 className="card-title">{event.title}</h5> {/* Display event title */}
+                    <p className="card-text">{event.description}</p> {/* Display event description */}
+                    <div className="mb-1">
+                      <span className="fw-bold me-1">Location:</span>
+                      {event.location} {/* Display event location */}
+                    </div>
+                    <div className="mb-1">
+                      <span className="fw-bold me-1">Date:</span>
+                      {new Date(parseInt(event.date)).toLocaleDateString(
+                        "en-US",
+                        {
+                          year: "numeric",
+                          month: "short",
+                          day: "numeric",
+                        }
+                      )} {/* Display formatted event date */}
+                    </div>
+                    <div className="text-muted">
+                      {event.user ? "Organized by " + event.user.username : ""} {/* Display event organizer if available */}
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default AllEvents; // Exporting the AllEvents component
