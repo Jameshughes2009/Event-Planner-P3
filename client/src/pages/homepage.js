@@ -1,4 +1,5 @@
 import React from "react"; // Importing React library
+import "./homepage.css;"
 
 // Homepage component that takes posts and format_date as props
 const Homepage = ({ posts, format_date }) => {
