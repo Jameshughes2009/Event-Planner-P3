@@ -30,7 +30,7 @@ const Footer = () => {
           </div>
           
         </section>
-        
+        {/* all these sections can be updated */}
         {/* Footer bottom section */}
         <section className="footer" id="footer">
           <section className="form-footer">
