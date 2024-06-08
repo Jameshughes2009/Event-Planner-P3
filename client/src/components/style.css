@@ -62,3 +62,9 @@
     border-color: red, blue;
     box-shadow: 0 0 5px purple, 0 0 10px black, 0 0 20px blue;
 }
+.footer {
+    font-family: var(--Font);
+}
+.name {
+    font-size: larger;
+}
