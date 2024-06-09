@@ -4,38 +4,48 @@ import './style.css'; // Importing custom CSS for additional styling
 
 function Contact() {
     return (
-        <div className="container d-flex flex-column justify-content-center min-vh-100"> {/* Container to center the form vertically and horizontally */}
+        <div className="container d-flex flex-column justify-content-center min-vh-100">
             <div className="row">
-                <div className="col-md-6 offset-md-3"> {/* Centering the column in the middle of the row */}
-                    <h1 className="title">Contact</h1> {/* Title for the contact form */}
+                <div className="col-md-6 offset-md-3">
+                    <h1 className="title">Contact</h1>
                     <form
-                        action="https://getform.io/f/(customSlugHere)" // The form will submit to this URL
-                        method="POST" // Form submission method
-                        className="d-flex flex-column" // Flexbox layout to arrange form elements vertically
+                        action="https://getform.io/f/(customSlugHere)"
+                        method="POST"
+                        className="d-flex flex-column"
                     >
+                        <label htmlFor="name">Name</label>
                         <input
                             type="text"
+                            id="name"
                             name="name"
                             placeholder="Enter Name"
-                            className="inputField glow" // Class names for custom styling
+                            className="inputField glow"
+                            required
                         />
+                        <label htmlFor="email">Email</label>
                         <input
-                            type="text"
+                            type="email"
+                            id="email"
                             name="email"
                             placeholder="Enter Email"
-                            className="inputField glow" // Class names for custom styling
+                            className="inputField glow"
+                            required
                         />
+                        <label htmlFor="message">Message (400 Character Max)</label>
                         <textarea
+                            id="message"
                             name="message"
-                            placeholder="Enter Message (400) Character Max"
-                            rows="10"
-                            className="textareaField glow" // Class names for custom styling
+                            placeholder="Enter Message"
+                            rows="5"
+                            maxLength="400"
+                            className="textareaField glow"
+                            required
                         />
                         <button 
-                            type="button" // Changing the button type to 'button' instead of 'submit'
-                            className="submitButton" // Class name for custom styling
+                            type="submit"
+                            className="submitButton"
                         >
-                            Submit.
+                            Send Message
                         </button>
                     </form>
                 </div>
@@ -44,4 +54,4 @@ function Contact() {
     );
 }
 
-export default Contact; // Exporting the Contact component for use in other parts of the application
+export default Contact;
