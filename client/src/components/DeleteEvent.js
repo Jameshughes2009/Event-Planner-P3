@@ -1,25 +1,21 @@
-import React from "react"; // Import React
-import { useMutation } from "@apollo/client"; // Import useMutation hook from Apollo Client
-import { DELETE_EVENT } from "../utils/mutations"; // Import the DELETE_EVENT mutation
-import { Button } from "react-bootstrap"; // Import Button component from React Bootstrap
+import React from "react";
+import { useMutation } from "@apollo/client";
+import { DELETE_EVENT } from "../utils/mutations";
+import { Button } from "react-bootstrap";
 
-// DeleteEvent component receives an eventId as a prop
 const DeleteEvent = ({ eventId }) => {
-  // useMutation hook for the DELETE_EVENT mutation
   const [deleteEvent] = useMutation(DELETE_EVENT);
 
-  // Handler for deleting the event
   const handleDeleteEvent = async () => {
     try {
-      // Call the deleteEvent mutation with the eventId
       await deleteEvent({
         variables: {
-          deleteEventId: eventId, // Ensure this matches the GraphQL mutation variable name
+          deleteEventId: eventId,
         },
       });
-      console.log("Event deleted successfully"); // Log success message
+      console.log("Event deleted successfully");
     } catch (err) {
-      console.error("Error deleting event:", err); // Log any errors to the console
+      console.error("Error deleting event:", err);
     }
   };
 
@@ -30,4 +26,4 @@ const DeleteEvent = ({ eventId }) => {
   );
 };
 
-export default DeleteEvent; // Export the DeleteEvent component
+export default DeleteEvent;
