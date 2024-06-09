@@ -7,7 +7,7 @@ function Donation() {
   return (
     <div className="donation-container">
       <h2 className="donation-heading">Donation</h2>
-      <p>If you wish to support our efforts, please consider making a donation by clicking the button below.</p>
+      <p> For Future work we have added this donation section</p>
       <button className="donation-button">Donate</button>
     </div>
   );

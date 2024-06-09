@@ -76,4 +76,16 @@
 
 .donation-container {
     color: white;
+    margin: 30px;
+    text-align: left;
+    
+}
+.donation-button {
+    color: white;
+    background-color: black;
+}
+
+.donation-heading {
+    color: #f8f9fa;
+    font-size: 50px;
 }

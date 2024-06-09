@@ -114,18 +114,22 @@ const EventDetails = () => {
   }, [countDown]);
 
   const countDownStyle = {
-    height: "300px",
-    background: "linear-gradient(to right, pink, orange)", // Gradient background for countdown timer
+    height: "300px", // Adjusted height for a smaller countdown timer
+    background: "linear-gradient(to right, #4CAF50, #2196F3)", // Gradient background for countdown timer in green and blue shades
   };
-
+  
   const buttonStyle = {
-    backgroundColor: "#FFA500", // Button background color
-    borderColor: "#FFA500", // Button border color
-    borderRadius: "5px", // Button border radius
-    width: "20%", // Button width
-    margin: "3%", // Button margin
+    backgroundColor: "#FF5722", // button background color to a shade of orange
+    borderColor: "#FF5722", // Cbutton border color to match background color
+    borderRadius: "10px", // button border radius for a slightly rounded appearance
+    width: "150px", // button width for better proportion
+    margin: "0 auto", // Center aligning the button horizontally
+    padding: "12px 24px", 
+    color: "#FFFFFF", // Changed button text color to white for better contrast
+    fontSize: "15px", // button text size
+    fontWeight: "bold", // Made button text bold for emphasis
+    cursor: "pointer", // cursor Set to pointer to indicate interactivity
   };
-
   return (
     <>
       {/* Countdown timer */}
@@ -136,12 +140,12 @@ const EventDetails = () => {
       >
         {countDownFormat.timeRemaining > 0 ? (
           <h2 className="p-2">
-            GET EXCITED! {eventData.title.toUpperCase()} COMING SOON!
+            IT's ALMOST TIME FOR {eventData.title.toUpperCase()} KEEP AN EYE OUT
           </h2>
         ) : (
           <>
             <h2 className="p-2">
-              {eventData.title.toUpperCase()} HAS ALREADY PASSED!
+              {eventData.title.toUpperCase()} THE EVENT HAS ALREADY PASSED!
             </h2>
             <a href="/allEvents" style={{ color: "white" }}>
               Check out all events to see more
