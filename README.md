@@ -25,7 +25,7 @@ Introducing "James & Hement's Event Manager"! This cutting-edge MERN stack singl
 
 Our App is a comprehensive personal event planner app designed to simplify event management for individuals. Whether you're organizing a birthday party, wedding reception, or a corporate event, while also providing all the tools you need to plan, organize, and execute your events seamlessly.
 
-Key Features:
+### Key Features:
 
 - Event Creation: Easily create and customize events with details such as event name, date, time, location, description, and guest list management.
 
@@ -37,7 +37,7 @@ Key Features:
 
 - Data Security: Ensure the security of your event data with robust encryption and user authentication mechanisms.
 
-Future Development Plan:
+### Future Development Plan:
 
 - Multi-User Support: Implement multi-user support to allow multiple users to collaborate on event planning. Users can have different roles and permissions, such as event organizer, guest, or vendor.
 
@@ -54,6 +54,12 @@ Future Development Plan:
 - Third-Party Integrations: Explore integrations with third-party services such as event ticketing platforms, catering services, and venue booking systems to enhance the app's functionality.
 
 With are app the aim is to revolutionize personal event planning by combining intuitive design with powerful features and seamless integrations, empowering users to create/plan memorable events with ease.
+
+## Credits 
+
+- YouTube Videos and examples
+- Audru Sanchez a UofT Bootcamp Tutor
+- Class examples 
 
 
 ## Author's
