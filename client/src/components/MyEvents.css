@@ -1,0 +1,176 @@
+/* Import the Libre Baskerville font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+/* Apply the Libre Baskerville font to the entire page */
+body, html {
+  font-family: 'Libre Baskerville', serif;
+}
+
+.events-page {
+  background-image: url('../assets/Image.jpg'); /* Ensure this path is correct */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.center {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+  width: 100%; /* Ensure it takes full width */
+  text-align: center; /* Center the text */
+}
+
+.mx-auto {
+  width: 100%;
+}
+
+.events-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Align items to the left */
+  align-items: flex-start;
+  gap: 10px; /* Adjust gap between cards */
+  padding: 10px;
+  overflow-y: auto; /* Allows vertical scrolling */
+  max-height: calc(100vh - 150px); /* Adjust based on header/footer */
+}
+
+.event-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin: 10px; /* Adjust margin to control spacing */
+  width: 180px; /* Set fixed width for cards */
+  height: 250px; /* Set fixed height for cards */
+  display: flex;
+  flex-direction: column;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.event-image {
+  height: 130px; /* Adjust height to fit more cards */
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../assets/default-event-image.png'); /* Default image path */
+}
+
+.card-body {
+  padding: 15px; /* Reduced padding */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.card-title, .card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-title {
+  font-size: 1rem; /* Adjust font size */
+  margin-bottom: 8px;
+}
+
+.card-text {
+  font-size: 0.875rem; /* Adjust font size */
+  margin-bottom: 10px;
+}
+
+.edit-icon,
+.delete-icon {
+  color: #cf0e0e;
+  cursor: pointer;
+}
+
+.edit-icon:hover,
+.delete-icon:hover {
+  color: #c73407;
+}
+
+/* Additional styles specific to AllEvents page */
+.all-events-page {
+  background-image: url('../assets/Image.jpg'); /* Ensure this path is correct */
+  background-size: cover; /* Ensures the background image covers the entire viewport */
+  background-position: center;
+  background-attachment: fixed; /* Fixes the background image so it doesn't scroll with the content */
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.all-events-page .container {
+  padding: 20px;
+}
+
+.all-events-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items horizontally */
+  align-items: flex-start;
+  gap: 10px; /* Adjust gap between cards */
+  padding: 10px;
+}
+
+.all-events-page .event-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin: 10px; /* Adjust margin to control spacing */
+  width: 180px; /* Set fixed width for cards */
+  height: 300px; /* Set fixed height for cards */
+  display: flex;
+  flex-direction: column;
+}
+
+.all-events-page .event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.all-events-page .card-body {
+  padding: 10px; /* Reduced padding */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.all-events-page .card-title, .all-events-page .card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.all-events-page .card-title {
+  font-size: 1rem; /* Adjust font size */
+  margin-bottom: 8px;
+}
+
+.all-events-page .card-text {
+  font-size: 0.875rem; /* Adjust font size */
+  margin-bottom: 10px;
+}
+
+.all-events-page .text-muted {
+  font-size: 0.875rem;
+  color: #6c757d !important;
+}
