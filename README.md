@@ -63,4 +63,4 @@ With are app the aim is to revolutionize personal event planning by combining in
 
 
 ## Author's
-Follow me on Github at [James](https://github.com/Jameshughes2009) & [Hement] feel free to contact us
+Follow us on Github at [James](https://github.com/Jameshughes2009) & [Hement](https://github.com/hementB2), and feel free to contact us
