@@ -50,6 +50,19 @@ With are app the aim is to revolutionize personal event planning by combining in
 - Audru Sanchez a UofT Bootcamp Tutor
 - Class examples
 
+## GitHub Repository:
+[GitHub Repository](https://github.com/Jameshughes2009/Event-Planner-P3)
+
+## Deployed Herok Application Link:
+[Heroku]()
+
+## Screenshots:
+### Figure 1. WIREFRAME Screenshot.
+
+## Screenshots:
+### Figure 2. Deployed Application Screenshot.
+
+
 ## Author's
 
 Follow us on Github at [James](https://github.com/Jameshughes2009) & [Hement](https://github.com/hementB2), and feel free to contact us
