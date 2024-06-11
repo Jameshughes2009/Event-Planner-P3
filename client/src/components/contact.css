@@ -1,0 +1,42 @@
+.title {
+    font-style: bold;
+    text-align: center;
+    color: red;
+}
+.container {
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+.title {
+    color: #333; /* Dark text color */
+    text-align: center;
+}
+
+.inputField, .textareaField {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    text-align: center;
+}
+
+.inputField:focus, .textareaField:focus {
+    border-color: #007bff; /* Blue border color when focused */
+}
+
+.submitButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Blue submit button */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
