@@ -119,6 +119,7 @@ h1, h2, h3 {
   }
 }
 
+
 .donation-heading, p {
   color: rgb(0, 0, 0);
 }
@@ -127,6 +128,7 @@ h1, h2, h3 {
   color: #ff6f61; /* Warm red color */
   font-weight: 700;
 }
+
 
 /* Print Styles */
 @media print {
@@ -143,4 +145,8 @@ h1, h2, h3 {
     box-shadow: none; /* No shadow for print */
     border: 1px solid #ffffff; /* Light border for print */
   }
+}
+
+.home-content, p {
+  color: white;
 }
