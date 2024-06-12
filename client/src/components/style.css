@@ -92,3 +92,10 @@
 .navbar-nav{
     color: white;
 }
+.home-title{
+    text-align: center;
+}
+.home-content {
+    text-align: center;
+    font-size: 30px;
+}
