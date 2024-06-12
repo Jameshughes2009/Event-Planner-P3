@@ -1,90 +1,110 @@
 /* Body Styles */
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
   overflow-y: scroll;
-  background-color: #f9f9f9; /* Lighter gray background */
+  background-color: #f4f4f9; /* Soft off-white background */
+  color: #333; /* Darker text color for readability */
 }
 
 /* Navbar Styles */
+.navbar {
+  background-color: #282c34; /* Dark background for navbar */
+}
+
 .navbar-brand,
 .nav-link {
-  color: #00796b !important; /* Bright teal text */
-  font-weight: bold;
+  color: #61dafb !important; /* Soft blue text */
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .navbar-brand:hover,
 .nav-link:hover {
-  color: #009688 !important; /* Teal on hover */
+  color: #21a1f1 !important; /* Brighter blue on hover */
 }
 
 .navbar-toggler-icon {
-  background-color: #00796b; /* Teal navbar toggler icon */
+  background-color: #61dafb; /* Soft blue navbar toggler icon */
 }
 
 @media (max-width: 992px) {
   .navbar-collapse {
-      background-color: #00796b; /* Teal collapse background */
+      background-color: #282c34; /* Dark background for collapsed navbar */
   }
 }
 
 /* Footer Styles */
 .footer {
-  background-color: #3f51b5; /* Bright blue footer */
-  color: #ffffff; /* White text */
+  background-color: #20232a; /* Darker background for footer */
+  color: #61dafb; /* Soft blue text */
+  padding: 20px 0;
+}
+
+.footer a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #21a1f1;
 }
 
 /* Heading Styles */
 h1, h2, h3 {
-  color: #00796b; /* Bright teal headings */
+  color: white; 
+  font-weight: 70;
 }
 
 /* General Container */
 .container {
-  max-width: 1200px; /* Reduced container width */
+  max-width: 1100px; 
   margin: 0 auto;
-  padding: 15px;
+  padding: 20px;
 }
 
 /* Card Styles */
 .card {
-  border-radius: 10px; /* Rounded corners */
-  border: 1px solid #e0e0e0; /* Light gray border */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+  border-radius: 8px; /* Slightly rounded corners */
+  border: none; /* No border */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  background-color: #fff; /* White background */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 .card:hover {
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  transform: translateY(-5px); /* Lift on hover */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
 }
 
 .card-img-top {
-  height: 200px;
+  height: 180px;
   object-fit: cover;
-  border-top-left-radius: 10px; /* Rounded corners for top of image */
-  border-top-right-radius: 10px;
+  border-top-left-radius: 8px; /* Rounded corners for top of image */
+  border-top-right-radius: 8px;
 }
 
 .card-body {
-  padding: 25px;
+  padding: 20px;
 }
 
 .card-title {
-  font-size: 24px; /* Larger title */
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #00796b; /* Bright teal title */
+  font-size: 22px; /* Slightly larger title */
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #20232a; /* Darker title */
 }
 
 .card-text {
-  margin-bottom: 20px;
-  color: #444; /* Darker text */
+  margin-bottom: 15px;
+  color: #555; /* Medium gray text */
 }
 
 .text-muted {
-  font-size: 14px;
+  font-size: 13px;
   font-style: italic;
-  color: #777; /* Lighter gray italic text */
+  color: #999; /* Light gray italic text */
 }
 
 @media (min-width: 768px) {
@@ -98,4 +118,35 @@ h1, h2, h3 {
       column-count: 3;
   }
 }
-  
+
+
+.donation-heading, p {
+  color: rgb(0, 0, 0);
+}
+/* Donation Heading Styles */
+.donation-heading {
+  color: #ff6f61; /* Warm red color */
+  font-weight: 700;
+}
+
+
+/* Print Styles */
+@media print {
+  .navbar, .footer, .social-icons-wrapper {
+    display: none; /* Hide navbar and footer */
+  }
+  .container {
+    max-width: 100%; /* Full width container for print */
+  }
+  h1, h2, h3, .card-title, .donation-heading {
+    color: black; /* Black text for print readability */
+  }
+  .card {
+    box-shadow: none; /* No shadow for print */
+    border: 1px solid #ffffff; /* Light border for print */
+  }
+}
+
+.home-content, p {
+  color: white;
+}

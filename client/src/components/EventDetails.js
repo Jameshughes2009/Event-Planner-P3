@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"; // Importing React and necessary hooks
 import { useParams, Link } from "react-router-dom"; // Importing routing functionalities
 import { useQuery } from "@apollo/client"; // Importing Apollo Client hook for querying
-
+import "./EventDetails"
 // import placeholder from "../assets/placeholder.png"; // Importing placeholder image
 import { GET_ONE_EVENT } from "../utils/queries"; // Importing GraphQL query to get one event
 import {
