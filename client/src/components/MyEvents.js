@@ -69,8 +69,8 @@ const MyEvents = () => {
     <div className="events-page">
       <Container className="center">
         <div className="mx-auto p-5">
-          <h3>Welcome {user.username}!</h3>
-          <p>To update or delete events, simply hover over the image</p>
+          <h3 style={{ color: "black"}}>Welcome {user.username}!</h3>
+          <p style={{ color: "black",}}>To update or delete events, simply hover over the image</p>
           <div className="events-container">
             {userEvents.length > 0 ? (
               <>
