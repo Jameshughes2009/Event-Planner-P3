@@ -65,10 +65,10 @@ const CreateEvent = () => {
   return (
     <div className="text-light bg-dark p-5">
       <Container>
-        <h1>Create Event</h1>
+        <h1 style= {{ color: "white"}}>Create Event</h1>
         {showSuccessMessage && ( 
           <Alert variant="success">
-            We got your events create!!
+            We got your event created!!
           </Alert>
         )}
         <Form onSubmit={handleFormSubmit}>
