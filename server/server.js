@@ -1,10 +1,10 @@
 const express = require("express");
 const { ApolloServer } = require("apollo-server-express");
 const path = require("path");
-const favicon = require('serve-favicon');
+const favicon = require("serve-favicon");
 
-const { typeDefs, resolvers } = require('./schemas');
-const db = require('./config/connection');
+const { typeDefs, resolvers } = require("./schemas");
+const db = require("./config/connection");
 
 const PORT = process.env.PORT || 3001;
 const app = express();
@@ -18,21 +18,30 @@ app.use(express.json());
 
 if (process.env.NODE_ENV === "production") {
     app.use(express.static(path.join(__dirname, "../client/build")));
-    app.use(favicon(path.join(__dirname, '../client/build', 'favicon.ico')));
+    app.use(favicon(path.join(__dirname, "../client/build", "favicon.ico")));
 }
 
 const startApolloServer = async (typeDefs, resolvers) => {
-    await server.start();
-    server.applyMiddleware({ app });
+    try {
+        await server.start();
+        server.applyMiddleware({ app });
 
-    db.once("open", () => {
-        app.listen(PORT, () => {
-            console.log(`We are successfully running on port ${PORT}!`);
-            console.log(
-                `Connect to GraphQL at http://localhost:${PORT}${server.graphqlPath}`
-            );
+        db.once("open", () => {
+            app.listen(PORT, () => {
+                console.log(`We are successfully running on port ${PORT}!`);
+                console.log(
+                    `Connect to GraphQL at http://localhost:${PORT}${server.graphqlPath}`
+                );
+            });
         });
-    });
+
+        db.on("error", (err) => {
+            console.error("Database connection error:", err);
+        });
+
+    } catch (err) {
+        console.error("Error starting Apollo Server:", err);
+    }
 };
 
 startApolloServer(typeDefs, resolvers);

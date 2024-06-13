@@ -12,15 +12,14 @@
     "keywords": [],
     "license": "ISC",
     "dependencies": {
-        "@apollo/server": "4.10.4",
         "apollo-server-express": "^3.13.0",
         "mongoose": "^8.4.1",
         "express": "^4.17.2",
         "graphql": "16.8.0",
         "bcryptjs": "^2.4.3",
         "jsonwebtoken": "^9.0.2",
-        "apollo-server": "^3.13.0",
-        "path": "0.12.7"
+        "path": "0.12.7",
+        "serve-favicon": "^2.5.0"
     },
     "devDependencies": {
         "nodemon": "3.1.3"
