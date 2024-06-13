@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { useQuery, useMutation } from "@apollo/client";
-import { Link } from "react-router-dom";
+import { useQuery, useMutation } from "@apollo/client"; // Apollo Client hooks for executing GraphQL queries and mutations
+import { Link } from "react-router-dom"; // Link component for navigation
 import {
   Container,
   Button,
@@ -9,39 +9,46 @@ import {
   Col,
   OverlayTrigger,
   Tooltip,
-} from "react-bootstrap";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEdit, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
-import { GET_ONE_USER, DELETE_EVENT } from "../utils/queries";
-import Auth from "../utils/auth";
-import './MyEvents.css'; // Import the CSS file
+} from "react-bootstrap"; // Bootstrap components for styling
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // FontAwesome component for icons
+import { faEdit, faTrashAlt } from '@fortawesome/free-solid-svg-icons'; // Specific icons from FontAwesome
+import { GET_ONE_USER, DELETE_EVENT } from "../utils/queries"; // GraphQL queries and mutations
+import Auth from "../utils/auth"; // Authentication utility
+import './MyEvents.css'; // Import the CSS file for custom styling
 
+// MyEvents component for displaying and managing user events
 const MyEvents = () => {
-  const [hover, setHover] = useState(null);
-  const [userEvents, setUserEvents] = useState([]);
-  const userToken = Auth.getProfile();
-  const userId = userToken.data._id;
+  const [hover, setHover] = useState(null); // State to manage hover effect on events
+  const [userEvents, setUserEvents] = useState([]); // State to store user events
+  const userToken = Auth.getProfile(); // Get user token from authentication
+  const userId = userToken.data._id; // Extract user ID from the token
 
+  // Function to handle hover effect
   const onHover = (eventId) => {
     setHover(eventId);
   };
 
+  // Function to handle mouse leave event
   const onLeave = () => {
     setHover(null);
   };
 
+  // Execute GET_ONE_USER query to fetch user data and events
   const { loading, error, data, refetch } = useQuery(GET_ONE_USER, {
     variables: { userId: userId },
   });
 
+  // useMutation hook to get the deleteEvent function from the DELETE_EVENT mutation
   const [deleteEvent] = useMutation(DELETE_EVENT);
 
+  // Effect hook to update userEvents state when data is fetched
   useEffect(() => {
     if (data && data.user && data.user.events) {
       setUserEvents(data.user.events);
     }
   }, [data]);
 
+  // Function to handle event deletion
   const handleDeleteEvent = async (eventId) => {
     try {
       await deleteEvent({
@@ -49,21 +56,23 @@ const MyEvents = () => {
           deleteEventId: eventId,
         },
       });
-      refetch();
+      refetch(); // Refetch user data to update the UI
       console.log("Event deleted successfully");
     } catch (err) {
       console.error("Error deleting event:", err);
     }
   };
 
+  // Display loading state
   if (loading) return <p>Loading...</p>;
+  // Display error state
   if (error) return <p>Error: {error.message}</p>;
-
+  // Display no user data state
   if (!data || !data.user) {
     return <p>No user data available</p>;
   }
 
-  const { user } = data;
+  const { user } = data; // Extract user data
 
   return (
     <div className="events-page">
