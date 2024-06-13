@@ -4,6 +4,7 @@
         "title": "Party At Apple",
         "description": "This is all the fun right now ",
         "cost": 39,
+        "attendees":["666b10ecaa2dd1130cc50d50"],
         "location": "65 Kennth",
         "date": "2024-09-01T10:00:00.000Z"
     },
@@ -11,6 +12,7 @@
         "id": "2",
         "title": "Fun Time ",
         "description": "more seed data",
+        "attendees":["666b10ecaa2dd1130cc50d50", "666b1285d27769d5bf123ff3"],
         "cost": 900,
         "location": "420 street",
         "date": "2024-10-05T10:30:00.000Z"
@@ -19,15 +21,17 @@
         "id": "3",
         "title": "UofT Grad Party ",
         "description": "End of School Celebrations",
+        "attendees":["666b10ecaa2dd1130cc50d50", "666b1285d27769d5bf123ff3"],
         "cost": 90,
         "location": "34Home Strech Ave",
-        "date": "2024-06-13T10:30:00.000Z"
+        "date": "2024-06-16T10:30:00.000Z"
     },
 
     {
         "id": "4",
         "title": "All Inclusive Resort",
         "description": "Testing",
+        "attendees":["666b10ecaa2dd1130cc50d50", "666b1285d27769d5bf123ff3"],
         "cost": 90000,
         "location": "Dominiacn Republic",
         "date": "2025-02-07T10:30:00.000Z"

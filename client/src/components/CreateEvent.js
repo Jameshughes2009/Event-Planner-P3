@@ -16,6 +16,7 @@ const CreateEvent = () => {
     cost: "",
     location: "",
     date: "",
+    attendees: "",
   });
   
   // State to handle success message visibility
