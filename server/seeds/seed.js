@@ -17,3 +17,4 @@ db.once("open", async () => {
     process.exit(0);
 })
 
+// Take about attendes and the ability to use them on the backend and future development

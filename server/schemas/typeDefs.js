@@ -22,6 +22,7 @@ const typeDefs = gql`
         location: String!
         user: User
         date: String!
+        attendees: User
     }
 
     type Query {

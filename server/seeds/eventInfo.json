@@ -31,7 +31,7 @@
         "id": "4",
         "title": "All Inclusive Resort",
         "description": "Testing",
-        "attendees":["666b10ecaa2dd1130cc50d50", "666b1285d27769d5bf123ff3"],
+        "attendees":["666b10ecaa2dd1130cc50d50", "666b1285d27769d5bf123ff3", "666b13b50b7ec6be7f773c96"],
         "cost": 90000,
         "location": "Dominiacn Republic",
         "date": "2025-02-07T10:30:00.000Z"
