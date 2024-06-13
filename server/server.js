@@ -16,8 +16,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 
-if (process.env.NODE_ENV === "") {
-    app.use(express.static(path.join(__dirname, "add here")))
+if (process.env.NODE_ENV !== "development") {
+    app.use(express.static("public"))
 }
 
 const startApolloServer = async (typeDefs, resolvers) => {
