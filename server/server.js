@@ -1,6 +1,7 @@
 const express = require("express");
 const { ApolloServer } = require("apollo-server-express");
 const path = require("path");
+const favicon = require('serve-favicon');
 
 const { typeDefs, resolvers } = require('./schemas');
 const db = require('./config/connection');
@@ -16,7 +17,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 if (process.env.NODE_ENV === "production") {
-    app.use(express.static(path.join(__dirname, "../client")));
+    app.use(express.static(path.join(__dirname, "../client/build")));
+    app.use(favicon(path.join(__dirname, '../client/build', 'favicon.ico')));
 }
 
 const startApolloServer = async (typeDefs, resolvers) => {
