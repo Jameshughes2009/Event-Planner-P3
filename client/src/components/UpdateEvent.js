@@ -5,6 +5,7 @@ import { useQuery, useMutation } from "@apollo/client"; // Importing Apollo Clie
 import { GET_ONE_EVENT } from "../utils/queries"; // Importing query to get one event
 import { UPDATE_EVENT } from "../utils/mutations"; // Importing mutation to update an event
 import { Container, Col, Form, Button, Row, Alert } from "react-bootstrap"; // Importing Bootstrap components for styling
+import "./update.css"
 
 const UpdateEvent = () => {
   const [updateEvent] = useMutation(UPDATE_EVENT); // Defining mutation hook for updating event
