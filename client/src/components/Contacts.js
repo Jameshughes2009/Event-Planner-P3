@@ -14,7 +14,7 @@ function Contact() {
                         method="POST"
                         className="d-flex flex-column"
                     >
-                        <label htmlFor="name">Name</label>
+                        <label htmlFor="name" style={{ color: "", fontSize: "30px"}}>Name</label>
                         <input
                             type="text"
                             id="name"
@@ -23,7 +23,7 @@ function Contact() {
                             className="inputField glow"
                             required
                         />
-                        <label htmlFor="email">Email</label>
+                        <label htmlFor="email"style={{ color: "", fontSize: "30px"}}>Email</label>
                         <input
                             type="email"
                             id="email"
@@ -32,7 +32,7 @@ function Contact() {
                             className="inputField glow"
                             required
                         />
-                        <label htmlFor="message">Message (400 Character Max)</label>
+                        <label htmlFor="message" style={{ color: "", fontSize: "30px"}}>Message (400 Character Max)</label>
                         <textarea
                             id="message"
                             name="message"
